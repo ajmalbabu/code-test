@@ -8,9 +8,9 @@ public class LongestSubArrayWithEqualZerosAndOnes {
 
     public static void main(String[] args) {
 
-        System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(0, 1, 1, 1, 1, 0).toArray()));
-        System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(0, 1, 1, 1, 1, 0, 0).toArray()));
-        System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(0, 1, 1, 1, 1, 0, 0, 0).toArray()));
+//        System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(0, 1, 1, 1, 1, 0).toArray()));
+//        System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(0, 1, 1, 1, 1, 0, 0).toArray()));
+//        System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(0, 1, 1, 1, 1, 0, 0, 0).toArray()));
         System.out.println(longestSubArrayWithEqualZerosAndOnes(IntStream.of(1, 0, 1, 1, 1, 0, 0).toArray()));
 
         // See if flatMap can help or collect can help

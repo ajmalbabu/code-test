@@ -11,6 +11,9 @@ public class LongestSubArrayWithGivenSum {
         System.out.println(longestSubArrayWithGivenSum(IntStream.of(1, -1, 1, 1, 1, -1, -1, -1).toArray(), 0));
         System.out.println(longestSubArrayWithGivenSum(IntStream.of(1, -1, 1, -1).toArray(), 0));
 
+
+        System.out.println(longestSubArrayWithGivenSum(IntStream.of(3, 1, 2, 1, 1, 1, 0, 0, -1, +1, 3, 1, 2, 1, 2, -3, 0).toArray(), 3)); // 7 is the answer
+
     }
 
     private static int longestSubArrayWithGivenSum(int[] arr, int sum) {
@@ -28,8 +31,8 @@ public class LongestSubArrayWithGivenSum {
             if (cumulatives.contains(cumSum - sum)) {
                 if (currArrLength > arrLength)
                     arrLength = currArrLength;
-                currArrLength = 0;
                 currCumSum = 0;
+                currArrLength = 0;
             }
             cumulatives.add(cumSum);
         }
